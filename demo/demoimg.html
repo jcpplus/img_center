@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>案例照片编辑</title>
+    <link rel="stylesheet" href="../assets/css/admin-designer.css">
+    <link rel="stylesheet" href="../assets/css/select2.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/css.css" />
+</head>
+
+<body>
+    <div class="page-wrap  desiner-sent">
+        <div class="nav-bar">
+            <div class="nav-box w940">
+                <div class="fr"><a href="/" title="退出" class="logo-out">退出</a></div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="page-content">
+                <div class="main-content w940">
+                   
+                    <div class="alert-box alert alert-warning clearfix alert-dismissible fade in" role="alert">
+                        <button type="button" class="close top" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div>非常抱歉，您的作品没有审核通过，原因是xxxxxxx，请修改后重新发布</div>
+                    </div>
+                    <div class="designer-work-box clearfix">
+                        
+                        <dl class="work-detail">
+                            <dt class="detail-title">北欧印象 宜家风格</dt>
+                            <dd class="detail-item">
+                                [上海] 金谊河畔
+                            </dd>
+                            <dd class="detail-item">
+                                <span>3室1厅1厨1卫</span> ;&nbsp; <span>89平米以上</span> ;&nbsp; <span>田园简约</span>
+                            </dd>
+                            <dd class="detail-item detail-item-desc">
+                                <span>
+                                文化石，木吊顶以及地板的基础装修，是文化石，木吊顶以及地板的基础木吊顶以及地板的基础装修
+                            </span>
+                            </dd>
+                            <dd class="detail-item detail-item-num">
+                                收藏<span class="num">50</span>
+                            </dd>
+                            <dd class="btn-box right clearfix">
+                                <div class="btn btn-submit ">发布</div>
+                                <div class="btn btn-status2 ">预览</div>
+                                <div class="btn btn-delete ">编辑</div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="designer-work-list clearfix">
+                        <div class="list-title">案例照片
+                            <div class="case-edit">
+                                <label class="cover-img" for="addImg">
+                                    <span class="case-photo-new">新增照片
+                                        <input class="visiblity-hidden" type="file" id="addImg">
+                                    </span>
+                                </label>
+                                <span>|</span>
+                                <span class="case-delete" id="caseDelete">删除案例</span>
+                            </div>
+                        </div>
+                        <div class="alert-box clearfix">
+                            <div id="myAlert" class="alert-box alert alert-warning clearfix alert-dismissible fade in" role="alert">
+                                <button type="button" class="close top" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <div>照片要求：房屋实拍图（效果图无法通过审核），边长需要大于1000px，无水印，数量大于10张，
+                                    <br> 所展示的空间务必包括厨房、客厅、卧室、卫生间
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-list-item-box">
+                        <div class="list-item "  data-idx="001">
+                            <div class="list-img clearfix">
+                                <img src="../assets/img/loading.gif" data-src="http://a.hiphotos.baidu.com/image/pic/item/0e2442a7d933c895b12b2564d31373f082020053.jpg" alt="" title="">
+                                <div class="mark">1</div>
+                                <div class="cover-flag">封面</div>
+                            </div>
+                            <p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>
+                           
+                        </div>
+                        <div class="list-item "  data-idx="002">
+                            <div class="list-img clearfix">
+                                <img src="../assets/img/loading.gif" data-src="http://f.hiphotos.baidu.com/image/pic/item/2934349b033b5bb514c162f734d3d539b600bca1.jpg" alt="" title="">
+                                <div class="mark">2</div>
+                            </div>
+                            <p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>
+                            
+                        </div>
+                        <div class="list-item "  data-idx="003">
+                            <div class="list-img clearfix">
+                                <img src="../assets/img/loading.gif" data-src="http://g.hiphotos.baidu.com/image/pic/item/4ec2d5628535e5dd894e88de74c6a7efce1b6254.jpg" alt="" title="">
+                                <div class="mark">3</div>
+                            </div>
+                            <p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>
+                            
+                        </div>
+                        <div class="list-item "  data-idx="004">
+                            <div class="list-img clearfix">
+                                <img src="../assets/img/loading.gif" data-src="http://c.hiphotos.baidu.com/image/pic/item/37d3d539b6003af3581e1169372ac65c1038b617.jpg" alt="" title="">
+                                <div class="mark">4</div>
+                            </div>
+                            <p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>
+                           
+                        </div>
+                        <div class="list-item "  data-idx="005" >
+                            <div class="list-img clearfix">
+                                <img src="../assets/img/loading.gif" data-src="http://b.hiphotos.baidu.com/image/pic/item/ac345982b2b7d0a29539e494c9ef76094a369ac3.jpg" alt="" title="">
+                                <div class="mark">5</div>
+                            </div>
+                            <p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay none"></div>
+        <div class="pop w450 none" data-case="caseDelete">
+            <div class="face"></div>
+            <div class="text">
+                <p class="done">是否删除案例"案例的名称", 案例一旦删除后不可恢复。</p>
+                <div class="buttons-cc">
+                    <div id="delCase" class="sure-btn button btn btn-submit btn-small">确 定</div>
+                    <div class="cancle-btn button btn btn-delete btn-small">取 消</div>
+                </div>
+            </div>
+            <div class="chacha"></div>
+        </div>
+
+        <div class="select-img-hopup none">
+            <form action="">
+                <div class="hopup-close">×</div>
+                <div class="img-box">
+                    <img class="upload-preview" id="previewImg" src="" alt="" title="">
+                </div>
+                <div class="edit-box clearfix">
+                    <div class="box-left fl">
+                        <div class="space clearfix">
+                            <label for=""><em>*</em>空间：</label>
+                            <select class="js-example-basic-multiple" multiple="multiple" id="zxLeixing">
+                                <option value="AL">s</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                            </select>
+                        </div>
+                        <div class="space clearfix">
+                            <label for=""><em>*</em>局部：</label>
+                            <select class="js-example-basic-multiple" multiple="multiple" id="zxLeixing">
+                                <option value="AL">s</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                            </select>
+                        </div>
+                        <div class="clearfix margin-none">
+                            <label for="editGoods"><em class="visi-hidden">*</em>物品：</label>
+                            <select class="js-example-basic-multiple" multiple="multiple" id="zxLeixing">
+                                <option value="AL">s</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-right fl">
+                        <label for="">设计理念：</label>
+                        <textarea maxlength="100" placeholder="您可以输入本张图片的设计理念，限100字" id="" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="finish-button">
+                    <div class="btn btn-submit button">完成</div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/lib/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/lib/alert.js"></script>
+    <script type="text/javascript" src="../assets/js/lib/jquery.imgload.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.imgareaselect.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.list-img img').loadImage();
+
+        $(".js-example-basic-multiple").select2({
+            width: '220',
+            no_results_text: "没有找到",
+            maximumSelectionLength: 4
+            // dropdownAutoWidth : true
+        });
+
+        // 新增照片事件 start
+        //显示图片选择的hopup
+        function showHopup() {
+            $('.select-img-hopup').removeClass('none');
+            $('.overlay').removeClass('none');
+        };
+        // 关闭图片选择的hopup
+        function closeHopup() {
+            $('.select-img-hopup').addClass('none');
+            $('.overlay').addClass('none');
+            $('.imgareaselect-handle').parent().remove();
+            $('.imgareaselect-outer').remove();
+        }
+        //关闭hopup
+        $('.select-img-hopup').on('click', '.hopup-close', function() {
+            closeHopup();
+            var imgEle = '<img class="upload-preview" id="previewImg" src="" alt="" title="">';
+            $('.select-img-hopup .img-box').html(imgEle);
+
+        });
+        //点击新增照片按钮
+        $('#addImg').on('change', function(){
+            changea('previewImg', 'addImg',this);
+            showHopup();
+        });
+
+        // 获取浏览器宽高
+        var imgclientW = $(window).width(),
+            imgclientH = $(window).height();
+
+        var image = new Image(),
+        imageMsg = {
+            height: 0,
+            width: 0
+        }
+        //获取选择区域的四个点坐标
+        var imgSelectX1,
+            imgSelectX2,
+            imgSelectY1,
+            imgSelectY2;
+        /*ie 图片上传*/
+        // previewImg为需要显示的img id
+        // uplodaImg为点击的input file标签id
+        function changea(previewImg, uplodaImg) {
+            var pic = document.getElementById(previewImg),
+                file = document.getElementById(uplodaImg);
+
+            // gif在IE浏览器暂时无法显示
+            var isIE = navigator.userAgent.match(/MSIE/) != null,
+                isIE6 = navigator.userAgent.match(/MSIE 6.0/) != null;
+            if (isIE) {
+                var ext = file.value.substring(file.value.lastIndexOf(".") + 1).toLowerCase();
+                file.select();
+                var reallocalpath = file.value;
+                pic.src = reallocalpath;
+                image.src = reallocalpath;
+                imageMsg.height = image.height;
+                imageMsg.width = image.width;
+                showImageBox(previewImg,true);
+            } else {
+                upElement(file, previewImg);
+            }
+            function upElement(obj, previewImg) {
+                var file = obj.files[0];
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function(e) {
+                    var pic = document.getElementById(previewImg);
+                    pic.src = this.result;
+                    image.src = this.result;
+                    imageMsg.height = image.height;
+                    imageMsg.width = image.width;
+                    showImageBox(previewImg,false);
+                }
+            };
+        }
+        function showImageBox(previewImg,ISIE) {
+        if (previewImg == "previewImg") {
+            // 如果上传的图片 高比宽大(长条形)
+            if (imageMsg.height > imageMsg.width){
+                $('#previewImg').css({
+                    'width': 'auto',
+                    'height': imgclientH  - 320 + 'px'
+                });
+            }
+            // 如果上传的图片 高比宽小(宽扁形)
+            if (imageMsg.height < imageMsg.width){
+                if(imageMsg.width < (imgclientW / 2)) {
+                    $('#previewImg').css({
+                        'width': imageMsg.width ,
+                        'height': 'auto'
+                    });
+                } else if(imageMsg.width > (imgclientW / 2) && Math.floor((imageMsg.width/imageMsg.height)) == 1){
+                    $('#previewImg').css({
+                        'width': Math.floor(imgclientW / 4),
+                        'height': 'auto'
+                    });
+                } else if (imageMsg.width > (imgclientW / 2)){
+                    $('#previewImg').css({
+                        'width': Math.floor(imgclientW / 3),
+                        'height': 'auto'
+                    });
+                }
+            }
+            if (imageMsg.width == imageMsg.height){
+                $('#previewImg').css({
+                    'width': imgclientW / 4 -50,
+                    'height': 'auto'
+                });
+            }
+            $('img.upload-preview').imgAreaSelect({
+                aspectRatio: '1:1',
+                handles: true,
+                fadeSpeed: 200,
+                imgWidth: imageMsg.width,
+                imgHeight: imageMsg.height,
+                hide: true,
+                minWidth:100,minHeight:100,
+                onSelectChange: function(img,selection){
+                    imgSelectX1 = selection.x1;
+                    imgSelectX2 = selection.x2;
+                    imgSelectY1 = selection.y1;
+                    imgSelectY2 = selection.y2;
+                }
+            });
+        };
+        }
+
+        //弹窗点击完成按钮
+        var jietu;
+        $('.finish-button .button').on('click', function() {
+            closeHopup();
+            jietu = $('#h5crop-output').attr("src");
+
+            var liNum = $('.case-list-item-box .list-item').length;
+            console.log(liNum);
+            var imgBox = $(
+                '<div class="list-item " data-idx="00'+(liNum+1)+'">'+
+                    '<div class="list-img clearfix">'+
+                        '<img id="'+(liNum+1)+'" src="'+jietu+'" alt="" title="">'+
+                        '<div class="mark">'+(liNum+ 1)+'</div>'+
+                    '</div>'+
+                    '<p class="house-txt" title="文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显文字，最多显示两行文字，多余显">理念文字，最多显示两行文字，多余显示……</p>'+
+                    '<div class="house-add">客厅'+
+                        '<div class="case-edit-group none">'+
+                            '<span class="case-e e-prev" title="移到上一个位置">|</span>'+
+                            '<span class="case-e e-next" title="移到下一个位置">|</span>'+
+                            '<span class="case-e e-edit" title="编辑">|</span>'+
+                            '<span class="case-e e-del" data-idx="005" title="删除"></span>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'
+                );
+            //插入目标
+            $('.case-list-item-box').append(imgBox);
+            //动态生成的ID
+            var imgId = 'thumbnalis' + (liNum + 1);
+            //为删除绑定事件
+            imgBox.find('.remove').on('click', function() {
+                deleteImg($(this));
+            });
+            var imgEle = '<img class="upload-preview" id="previewImg" src="" alt="" title="">';
+            $('.select-img-hopup .img-box').html(imgEle);
+
+            hoverFlag();
+        })
+
+        // 新增照片事件 end
+
+        // 移动到每张图片上显示button
+        function hoverFlag() {
+            $('.case-list-item-box .list-img').hover(function(){
+                var _that = $(this);
+                var listHtml =
+                '<div class="cover-box">'+
+                    '<div id=""  class="cover-btn">设为封面</div>'+
+                '</div>';
+                _that.append(listHtml);
+
+            }, function(){
+                var _that = $(this);
+
+                if(_that.find('.cover-box')) {
+                    _that.find('.cover-box').remove();
+                }
+            });
+        }
+        hoverFlag();
+
+        // 设置封面
+        $('.designer-work-list').on('click', '.cover-btn', function(){
+            var _that = $(this);
+
+            // 获得当前button的父级节点，并取得父级节点的data属性
+            var _parentNode = _that.parents('.list-item');
+            var _pNodeNum = _parentNode.data('idx');
+
+            if(_pNodeNum) console.log(_pNodeNum);
+
+            var flagHtml ='<div class="cover-flag">封面</div>';
+            var hasCoverFlag = $('.list-item').find('.cover-flag');
+            if(hasCoverFlag) {
+                hasCoverFlag.remove();
+            }
+            _parentNode.append(flagHtml);
+
+        });
+
+        // 删除图片按钮
+        $('.designer-work-list').on('click', '.e-del', function() {
+            var _that = $(this);
+            var _parentNode = _that.parents('.list-item');
+            var _idx = _parentNode.data('idx');
+            var _txt = _parentNode.find('.house-txt').text();
+            console.log(_idx);
+
+            var _cfirmDialogHtml =
+            '<div class="pop del-pic-pop w450" data-popidx='+_idx+'>'+
+            '<div class="face"></div>'+
+            '<div class="text">'+
+                '<p class="done">是否删除照片"' + _txt + '。</p>'+
+                '<div class="buttons-cc">'+
+                    '<div class="pic-del-btn button btn btn-submit btn-small">确 定</div>'+
+                    '<div class="cancle-btn button btn btn-delete btn-small">取 消</div>'+
+                '</div>'+
+            '</div>'+
+            '<div class="chacha"></div>'+
+            '</div>';
+            $('.overlay').removeClass('none');
+            $('body').append(_cfirmDialogHtml);
+            // _parentNode.remove();
+        });
+
+        // 节点移动 TODO
+        // 下一个节点
+        $('.designer-work-list').on('click', '.e-next', function(){
+            var _parentNode = $(this).parents('.list-item');
+
+            alert(_parentNode.length);
+        });
+        // 节点移动
+        // 上一个节点
+        $('.designer-work-list').on('click', '.e-prev', function(){
+            alert('prev');
+        });
+        // 删除图片
+        $('body').on('click', '.pic-del-btn', function() {
+            var _that = $(this);
+            var _parent = _that.parents('.pop');
+            var _popIdex = _parent.data('popidx');
+            console.log('popidx '+_popIdex);
+
+            $('.list-item').each(function(i){
+                var _idx = $(this).data('idx');
+
+                if(_idx == _popIdex) {
+                    $(this).remove();
+                }
+            });
+            $('.overlay').addClass('none');
+            _parent.remove();
+        });
+        //删除案例 hopup
+        $('#caseDelete').on('click', function() {
+            var caseDel = '[data-case="caseDelete"]';
+            $('.overlay').removeClass('none');
+            $(caseDel).removeClass('none');
+        });
+        // 确定删除此案例
+        $('#delCase').on('click', function(){
+            $(this).parents('.pop').addClass('none');
+            $('.overlay').addClass('none');
+        })
+        // 隐藏hopup
+        $('body').on('click', '.cancle-btn, .chacha', function() {
+            $('.overlay').addClass('none');
+            if($(this).parents('.pop').data('popidx')){
+                //如果这个pop是动态插入的结构，则用remove删除。
+                $(this).parents('.pop').remove();
+            } else {
+                $(this).parents('.pop').addClass('none');
+            }
+        })
+
+
+        
+    });
+    </script>
+</body>
+
+</html>
